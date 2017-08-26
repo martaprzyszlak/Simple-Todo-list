@@ -1,0 +1,79 @@
+body {
+  font-size: 14px;
+  font-family: 'Amatic SC', cursive;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.todo-title {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  margin: 0 auto 30px;
+  padding: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  outline: none;
+  font-family: 'Amatic SC', cursive;
+}
+
+.todo-list {
+  padding-left: 0;
+  max-width: 500px;
+  margin: 0 auto 50px;;
+}
+
+.todo-element {
+  font-size: 16px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.task-completed {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  float:left;
+  margin-right: 10px;
+}
+
+.button {
+  float: right;
+}
+
+.content {
+  position: relative;
+  padding: 2.2em 0;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border-width: thin;
+
+}
+
+@media all and (min-width:600px) {
+  .content {
+    background: rgba(46, 46, 46, 0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 250px auto;
+  }
+}

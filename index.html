@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TODOLIST</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <script src="https://use.fontawesome.com/fe8918f13d.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+</head>
+
+<body>
+  <div class="content" id="app">
+    <h1 class="todo-title">TodoList</h1>
+    <input class="input" type="text" v-model="task" @keyup.enter="addTask">
+    <ol class="todo-list">
+      <li class="todo-element" v-for="todo of todos">
+        <span :class="{ 'task-completed': todo.completed }">
+          {{ todo.text }}
+        </span>
+        <input class="checkbox" type="checkbox" id="checkbox" v-model="todo.completed">
+        <button class="button" type="button" name="button" @click="removeTask(todo)">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+      </li>
+    </ol>
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
